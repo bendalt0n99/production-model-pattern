@@ -16,17 +16,17 @@ class AccuracyMetric(Metric):
 class PrecisionMetric(Metric):
     def calculate(self, y, y_pred):
         name = 'precision'
-        precision = precision_score(y, y_pred, average='weighted')  # You can specify average='binary' for binary classification
+        precision = precision_score(y, y_pred)
         return name, precision
 
 class RecallMetric(Metric):
     def calculate(self, y, y_pred):
         name = 'recall'
-        recall = recall_score(y, y_pred, average='weighted')  # You can specify average='binary' for binary classification
+        recall = recall_score(y, y_pred)
         return name, recall
 
 class FScoreMetric(Metric):
     def calculate(self, y, y_pred):
         name = 'f_score'
-        f1 = f1_score(y, y_pred, average='weighted')  # You can specify average='binary' for binary classification
+        f1 = f1_score(y, y_pred)
         return name, f1
