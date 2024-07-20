@@ -1,5 +1,11 @@
 #Data folder
-data
+data/*
+
+#Notebooks
+notebooks/*
+
+#MLFlow
+mlruns/
 
 
 # Byte-compiled / optimized / DLL files
